@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>CV</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar fixed-top navbar-expand-md shadow">
+            <div class="container-fluid">
+                <a class="navbar-brand" href=".">Gadgeter</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">¿Quién soy?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#techs">Habilidades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contáctame</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <h1 class="display-2">
+                            <span class="display-2__intro">¡Hola! Me llamo Emiliano Acevedo</span>
+                            <span class="display-2__description lh-sm">
+                                Soy un joven apasionado de la programacion
+                                que busca entrar a la industria de la tecnología.
+                                <br>
+                                Busco mi primera oportunidad como desarrollador Frontend
+                                de medio tiempo o intero, donde espero poder aplicar mis
+                                conocimientos y habilidades, permitiendo crecer profesionalmente.
+
+                            </span>
+                        </h1>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <div class="home-image">
+                            <img
+                                src="./images/Web development _Monochromatic.png" 
+                                alt="web developer"
+                                class="img-fluid"
+                                >
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="techs">
+            <div class="container">
+                <h4 class="fw-bold text-center mb-3 border-bottom border-3">Tecnologías que manejo</h4>
+                <div id="carouselTechs" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-inner fw-bold">
+                        <div class="carousel-item active">
+                            <div class="card">
+                                <img src="./images/html.png" class="card-img-top" alt="html card">
+                                <div class="card-body  border-top">
+                                    <p class="card-text text-center">HTML</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card">
+                                <img src="./images/css.png" class="card-img-top" alt="css card">
+                                <div class="card-body  border-top">
+                                    <p class="card-text text-center">CSS</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card">
+                                <img src="./images/js.png" class="card-img-top" alt="js card">
+                                <div class="card-body">
+                                    <p class="card-text text-center">JavaScript</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselTechs" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previo</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselTechs" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+                    <div class="carousel-indicators position-static">
+                        <button type="button" data-bs-target="#carouselTechs" data-bs-slide-to="0" class="active" aria-current="true"
+                            aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselTechs" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselTechs" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                </div>
+        </section>
+    </main>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
