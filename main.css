@@ -1,91 +1,92 @@
 @import "./css/bootstrap.min.css";
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap");
 
 :root {
-    --bs-body-font-family: 'JetBrains Mono', monospace;
+  --bs-body-font-family: "JetBrains Mono", monospace;
 }
 
-nav { 
-    font-weight: 700;
-    background-color: #77942E;
+nav {
+  font-weight: 700;
+  background-color: #77942e;
 }
 
 .nav-link {
-    border-bottom: 0.1rem solid var(--bs-body-color);
-    border-color: var(--bs-nav-link-color);
+  border-bottom: 0.1rem solid var(--bs-body-color);
+  border-color: var(--bs-nav-link-color);
 }
 
 .display-2 {
-    text-align: center;
-    text-transform: capitalize;
-    margin-bottom: 1rem;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
 }
 
 .display-2__intro {
-    display: inline-block;
-    font-weight: 700;
+  display: inline-block;
+  font-weight: 700;
 }
 
 .display-2__description {
-    font-size: 1rem;
-    display: block;
-    margin-top: 1.2rem;
-    text-transform: none;
+  font-size: 1rem;
+  display: block;
+  margin-top: 1.2rem;
+  text-transform: none;
 }
 
 section {
-    width: 100%;
-    height: 100%;
-    min-height: 100vh;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
 
-    padding-top: 5rem;
-    display: flex;
-    align-items: center;
+  padding: 5rem 0;
+  display: flex;
+  align-items: center;
 }
 
-#home {
-    background-color: #616161;
+#home,
+#projects {
+  background-color: #616161;
 }
 
 .card {
-    margin: 0 auto;
-    width: 50%;
+  margin: 0 auto;
+  width: 40%;
 }
 
-@media (min-width: 768px) { 
-    .nav-link {
-        border-bottom: 0.1rem solid transparent;
-    }
-    
-    .nav-link:hover, .nav-link:active {
-        border-bottom: 0.1rem solid var(--bs-body-color);
-    }
+#projects img {
+  width: 100%;
+  height: 100%;
+}
 
-    section {
-        width: 100%;
-        height: 100%;
-        min-height: 100vh;
-        padding-top: 0;
-        
-        display: flex;
-        align-items: center;
-    }
+@media (min-width: 768px) {
+  .nav-link {
+    border-bottom: 0.1rem solid transparent;
+  }
 
-    .display-2 {
-        text-align: var(--bs-body-text-align);
-    }
+  .nav-link:hover,
+  .nav-link:active {
+    border-bottom: 0.1rem solid var(--bs-body-color);
+  }
 
-    .display-2__description {
-        display: inline-block;
-    }
+  .display-2 {
+    text-align: var(--bs-body-text-align);
+  }
+
+  .display-2__description {
+    display: inline-block;
+  }
 }
 
 @media (min-width: 992px) {
-    .display-2__intro {
-        font-size: 3.5rem;
-    }
-    
-    .display-2__description {
-        font-size: 1.5rem;
-    }
+  .display-2__intro {
+    font-size: 3.5rem;
+  }
+
+  .display-2__description {
+    font-size: 1.5rem;
+  }
+
+  #projects img {
+    width: 95%;
+  }
 }
